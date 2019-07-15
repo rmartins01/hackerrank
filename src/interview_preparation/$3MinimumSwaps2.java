@@ -13,9 +13,24 @@ public class $3MinimumSwaps2 {
     // Complete the minimumSwaps function below.
     static int minimumSwaps(int[] arr) {
 
+    	int maior;
+    	int menor = Integer.MAX_VALUE;
+    	int numeroMovimentos = 0;
+    	ArrayList<Integer> listaNumAnalizado = new ArrayList<Integer>();
+    	
+    	for(int i=0; true; i++) {
+    		
+    		if(i>0 && arr[i] < menor) {
+    			
+    			menor = arr[i];
+    			
+    			numeroMovimentos++;
+    			
+    		}
+    	}
     	
     	
-    	return 0;
+    	return numeroMovimentos;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
