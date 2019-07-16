@@ -25,7 +25,8 @@ public class $3MinimumSwaps2 {
     			menor = arr[i];
     			
     			numeroMovimentos++;
-    			
+    		
+    			break;
     		}
     	}
     	
